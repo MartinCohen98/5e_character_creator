@@ -1,9 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native';
 
 interface StatBoxProps {
-    /** The text to display inside the button */
     name: string;
-    /** Whether the button can be interacted with */
     number: number;
 }
 
@@ -18,26 +16,29 @@ export default function StatBox({ name, number }: StatBoxProps) {
 }
 
 const styles = StyleSheet.create({
-  stat_number: {
-    fontSize: 28,
-  },
+    stat_number: {
+        fontSize: 36,
+        color: '#b0e0e6',
+    },
 
-  stat_modifier: {
-    fontSize: 16,
-  },
+    stat_modifier: {
+        fontSize: 22,
+        color: '#b0e0e6',
+    },
 
-  stat_name: {
-    fontSize: 12,
-  },
+    stat_name: {
+        fontSize: 12,
+        color: '#b0e0e6',
+    },
 
-  stat_box: {
-    flexDirection: 'column',
-    backgroundColor: '#D3D3D3',
-    alignItems: 'center',
-    borderRadius: 8,
-    margin: 4,
-    width: 60,
-  },
+    stat_box: {
+        flexDirection: 'column',
+        backgroundColor: '#3e3e42',
+        alignItems: 'center',
+        borderRadius: 8,
+        margin: 4,
+        width: 80,
+    },
 
   
 });
