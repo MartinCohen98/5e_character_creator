@@ -10,6 +10,10 @@ export default function HpBar({ maxHp }: HpBarProps) {
 
     const [hp, setHp] = useState(maxHp)
 
+    if(hp > maxHp) {
+        setHp(maxHp)
+    }
+
     const progress = (hp / maxHp)
 
     const damageHandler = () => {

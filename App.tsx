@@ -11,6 +11,7 @@ export default function App() {
 
     const onPressHandler = () => {
         setStat(17)
+        setMaxHp(46)
     }
 
 
